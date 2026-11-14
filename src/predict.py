@@ -25,7 +25,16 @@ def _muat():
     if _model is None:
         _model = joblib.load(ART / "model.joblib")
         _meta = json.loads((ART / "metadata.json").read_text())
-        _profil = json.loads((ART / "profil.json").read_text())
+        p = json.loads((ART / "profil.json").read_text())
+
+        # skalakan agar suhu_min/suhu_maks dan okupansi_puncak terpakai persis
+        lo, hi = min(p["suhu"]), max(p["suhu"])
+        p["suhu"] = [(v - lo) / (hi - lo) for v in p["suhu"]]
+        for tipe, kurva in p["okupansi"].items():
+            puncak = max(kurva)
+            if puncak > 0:
+                p["okupansi"][tipe] = [v / puncak for v in kurva]
+        _profil = p
     return _model, _meta, _profil
 
 
