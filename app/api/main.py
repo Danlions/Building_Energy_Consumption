@@ -13,7 +13,7 @@ class Masukan(BaseModel):
     libur_nasional: bool = False
     suhu_min: float
     suhu_maks: float
-    okupansi_puncak: float
+    okupansi_puncak: int
 
 
 @app.get("/health")

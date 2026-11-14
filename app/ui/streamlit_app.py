@@ -23,7 +23,7 @@ with st.form("masukan"):
     suhu_min = c1.number_input("Suhu minimum (°C)", value=22.0, step=0.5)
     suhu_maks = c2.number_input("Suhu maksimum (°C)", value=31.0, step=0.5)
     okupansi = st.number_input("Perkiraan jumlah orang pada jam tersibuk",
-                               value=450.0 if besok.weekday() < 5 else 20.0, step=10.0)
+                           value=450 if besok.weekday() < 5 else 20, step=10)
     kirim = st.form_submit_button("Prediksi")
 
 if kirim:

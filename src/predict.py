@@ -72,7 +72,7 @@ def prediksi_harian(tanggal: date, libur: bool, suhu_min: float,
     idx = pd.date_range(pd.Timestamp(tanggal), periods=24, freq="h")
     df = pd.DataFrame({
         "suhu_luar_C": [suhu_min + (suhu_maks - suhu_min) * x for x in s],
-        "okupansi_orang": [okupansi_puncak * x for x in profil["okupansi"][tipe]],
+        "okupansi_orang": [round(okupansi_puncak * x) for x in profil["okupansi"][tipe]],
         "hari_libur": int(libur),
     }, index=idx)
 
