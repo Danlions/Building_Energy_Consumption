@@ -1,9 +1,7 @@
 """Pembuat fitur. Dipakai oleh notebook (pelatihan) dan aplikasi (prediksi)."""
 import pandas as pd
 
-KOLOM_DASAR = ["suhu_luar_C", "kelembaban_luar_pct", "okupansi_orang", "hari_libur"]
 LAGS = (24, 168)  # semua >= 24 jam: tidak memakai data masa depan
-
 
 def buat_fitur(df: pd.DataFrame, pakai_lag: bool) -> pd.DataFrame:
     """df: indeks waktu per jam tanpa celah, berisi KOLOM_DASAR

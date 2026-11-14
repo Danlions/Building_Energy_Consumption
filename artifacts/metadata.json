@@ -1,6 +1,6 @@
 {
   "nama_model": "HistGradientBoostingRegressor (tanpa lag)",
-  "versi": "1.0.0",
+  "versi": "1.1.0",
   "dilatih_pada": "2026-11-14",
   "data_latih": {
     "mulai": "2024-01-01",
