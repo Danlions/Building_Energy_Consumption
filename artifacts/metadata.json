@@ -1,0 +1,29 @@
+{
+  "nama_model": "HistGradientBoostingRegressor (tanpa lag)",
+  "versi": "1.0.0",
+  "dilatih_pada": "2026-11-14",
+  "data_latih": {
+    "mulai": "2024-01-01",
+    "sampai": "2026-04-30"
+  },
+  "fitur_masukan": [
+    "jam",
+    "hari_minggu",
+    "bulan",
+    "suhu_luar_C",
+    "kelembaban_luar_pct",
+    "okupansi_orang",
+    "hari_libur"
+  ],
+  "target": "konsumsi_kWh",
+  "metrik": {
+    "satuan": "kWh",
+    "validation_MAE_baseline_lag168": 22.12,
+    "validation_MAE_model": 5.03,
+    "validation_MAE_model_masukan_berderau": 9.66,
+    "test_MAE_baseline_lag168": null,
+    "test_MAE_model": null
+  },
+  "versi_sklearn": "1.9.1",
+  "catatan": "Model membaca status hari terutama dari okupansi_orang."
+}
