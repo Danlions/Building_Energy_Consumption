@@ -20,8 +20,10 @@
     "validation_MAE_baseline_lag168": 22.12,
     "validation_MAE_model": 4.97,
     "validation_MAE_model_masukan_berderau": 9.69,
-    "test_MAE_baseline_lag168": null,
-    "test_MAE_model": null
+    "test_MAE_baseline_lag168": 24.24,
+    "test_MAE_model": 4.97,
+    "test_MAE_model_masukan_berderau": 9.86,
+    "test_bias_model": -0.34
   },
   "versi_sklearn": "1.9.1",
   "catatan": "Model membaca status hari terutama dari okupansi_orang."

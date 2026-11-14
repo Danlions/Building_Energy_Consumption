@@ -48,6 +48,6 @@ if kirim:
                          hide_index=True)
 
         mae = meta["metrik"]["validation_MAE_model"]
-        st.caption(f"Galat rata-rata model pada data validasi ±{mae:.1f} kWh per jam "
+        st.caption(f"Galat rata-rata model pada data uji ±{mae:.1f} kWh per jam "
                    f"jika suhu dan okupansi akurat; bisa lebih besar jika prakiraan meleset. "
                    f"Model v{h['versi_model']}.")
