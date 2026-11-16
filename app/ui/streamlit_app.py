@@ -41,11 +41,20 @@ if kirim:
         k2.metric("Jam puncak", f"{df['kWh'].idxmax():02d}:00", f"{df['kWh'].max():.0f} kWh")
 
         st.bar_chart(df, y_label="kWh", x_label="Jam")
+
+        tabel = pd.DataFrame({"tanggal": h["tanggal"], "jam": h["jam"],
+                              "suhu_C": h["suhu_C"], "orang": h["okupansi_orang"],
+                              "prediksi_kWh": h["prediksi_kWh"]})
         with st.expander("Lihat tabel per jam"):
-            st.dataframe(pd.DataFrame({"jam": h["jam"], "suhu_C": h["suhu_C"],
-                                       "orang": h["okupansi_orang"],
-                                       "prediksi_kWh": h["prediksi_kWh"]}),
-                         hide_index=True)
+            st.dataframe(tabel.drop(columns="tanggal"), hide_index=True)
+
+        st.download_button(
+            "Unduh tabel (CSV)",
+            data=tabel.to_csv(index=False).encode("utf-8-sig"),
+            file_name=f"prediksi_{h['tanggal']}.csv",
+            mime="text/csv",
+            on_click="ignore",
+        )
 
         mae = meta["metrik"]["validation_MAE_model"]
         st.caption(f"Galat rata-rata model pada data uji ±{mae:.1f} kWh per jam "
