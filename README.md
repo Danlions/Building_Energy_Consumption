@@ -3,9 +3,8 @@
 **Kasus:** 02, Konsumsi Energi Gedung (regresi deret waktu, metrik utama MAE) · **Aplikasi:** https://buildingenergyconsumption.streamlit.app/ · **Video:** [tautan video]
 
 | Anggota | NIM | Bagian yang dikerjakan |
-| Dwiky Jerryan Koryanto Muhammad | 2401401 | EDA dan pembersihan data, model dan evaluasi, API dan aplikasi |
-| [nama] | [NIM] | [bagian] |
-| Rifa Ardhan | 2400920 | Pengujian otomatis (pytest untuk `src/predict.py` dan API), pengujian manual aplikasi, notebook analisis galat, tombol unduh CSV |
+- Dwiky Jerryan Koryanto Muhammad | 2401401 | EDA dan pembersihan data, model dan evaluasi, API dan aplikasi |
+- Rifa Ardhan | 2400920 | Pengujian otomatis (pytest untuk `src/predict.py` dan API), pengujian manual aplikasi, notebook analisis galat, tombol unduh CSV |
 
 ## Masalah dan pengguna
 
@@ -114,11 +113,11 @@ tests/          test_predict.py, test_api.py
 
 ## Daftar periksa sebelum dikumpulkan
 
-- [ ] Repositori bersifat publik dan setiap anggota memiliki *commit*
-- [ ] *Notebook* dapat dijalankan ulang dari awal sampai akhir tanpa galat
-- [ ] *Baseline* wajib dilaporkan dan dibandingkan
-- [ ] Data *test* hanya dibuka satu kali, di akhir
-- [ ] `artifacts/metadata.json` berisi versi model, fitur masukan, *threshold*, dan metrik
-- [ ] Aplikasi dapat dibuka orang lain melalui tautan, termasuk dari ponsel
-- [ ] Aplikasi tidak berhenti mendadak ketika menerima masukan yang tidak wajar
-- [ ] Laporan paling banyak 6 halaman dan video paling lama 5 menit
+- [✅] Repositori bersifat publik dan setiap anggota memiliki *commit*
+- [✅] *Notebook* dapat dijalankan ulang dari awal sampai akhir tanpa galat
+- [✅] *Baseline* wajib dilaporkan dan dibandingkan
+- [✅] Data *test* hanya dibuka satu kali, di akhir
+- [✅] `artifacts/metadata.json` berisi versi model, fitur masukan, *threshold*, dan metrik
+- [✅] Aplikasi dapat dibuka orang lain melalui tautan, termasuk dari ponsel
+- [✅] Aplikasi tidak berhenti mendadak ketika menerima masukan yang tidak wajar
+- [✅] Laporan paling banyak 6 halaman dan video paling lama 5 menit
