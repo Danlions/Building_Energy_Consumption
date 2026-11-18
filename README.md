@@ -1,8 +1,6 @@
-# [Nama proyek] · Tim [nama tim]
+# Prediksi Konsumsi Energi Gedung · Tim [nama tim]
 
-> Salin berkas ini menjadi `README.md` di repositori tim kalian, lalu isi semua bagian di dalam kurung siku.
-
-**Kasus:** [nomor dan nama kasus] · **Aplikasi:** [tautan aplikasi] · **Video:** [tautan video]
+**Kasus:** 02 · Konsumsi energi gedung · **Aplikasi:** https://buildingenergyconsumption.streamlit.app/ · **Video:** [tautan video]
 
 | Anggota | NIM | Bagian yang dikerjakan |
 |---|---|---|
