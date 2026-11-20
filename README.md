@@ -1,8 +1,7 @@
 =======
 # Prediksi Konsumsi Energi Gedung · Tim [kaciww]
 
-**Kasus:** 02, Konsumsi Energi Gedung (regresi deret waktu, metrik utama MAE) · **Aplikasi:** https://buildingenergyconsumption.streamlit.app/ · **Video:** [tautan video]
-
+**Kasus:** 02, Konsumsi Energi Gedung (regresi deret waktu, metrik utama MAE) · **Aplikasi:** https://buildingenergyconsumption.streamlit.app/ · **Video:** https://drive.google.com/file/d/19SFqvlvvyUEBJB6qpj9rTtXNeqpK03bZ/view?usp=sharing
 | Anggota | NIM | Bagian yang dikerjakan |
 |---|---|---|
 | [Dwiky_Jerryan_Koryanto_Muhammad] | [2401401] | [EDA dan pembersihan data, model dan evaluasi, API dan aplikasi] |
